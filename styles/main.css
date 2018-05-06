@@ -1,0 +1,102 @@
+/* CIT 230 - Assignment Portal CSS Template */
+/* You may use #HEX or color names */
+
+/* * is a wildcard referring to all elements. */
+* { margin: 0; box-sizing: border-box; }
+
+body {
+    font-size: 16px;
+    line-height: 32px;
+    font-family: hackbold;
+    color: #000000;
+}
+
+h1 {
+    font-size: 2.4rem;
+    color: #000000;
+}
+
+h2 {
+    font-size: 2.0rem;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 1000px;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: #a5a5a5;
+    color: whitesmoke;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+    float: right;
+}
+
+footer {
+    font-size: 12px;
+}
+
+@font-face {
+    font-family: 'hackregular';
+    src: url('webfonts/Hack-Regular-webfont.eot');
+    src: url('webfonts/Hack-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('webfonts/Hack-Regular-webfont.woff2') format('woff2'),
+        url('webfonts/Hack-Regular-webfont.woff') format('woff'),
+        url('webfonts/Hack-Regular-webfont.ttf') format('truetype'),
+        url('webfonts/Hack-Regular-webfont.svg#hackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hackbold';
+    src: url('webfonts/Hack-Bold-webfont.eot');
+    src: url('webfonts/Hack-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('webfonts/Hack-Bold-webfont.woff2') format('woff2'),
+        url('webfonts/Hack-Bold-webfont.woff') format('woff'),
+        url('webfonts/Hack-Bold-webfont.ttf') format('truetype'),
+        url('webfonts/Hack-Bold-webfont.svg#hackbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hackitalic';
+    src: url('webfonts/Hack-Italic-webfont.eot');
+    src: url('webfonts/Hack-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('webfonts/Hack-Italic-webfont.woff2') format('woff2'),
+        url('webfonts/Hack-Italic-webfont.woff') format('woff'),
+        url('webfonts/Hack-Italic-webfont.ttf') format('truetype'),
+        url('webfonts/Hack-Italic-webfont.svg#hackitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hackbold_italic';
+    src: url('webfonts/Hack-BoldItalic-webfont.eot');
+    src: url('webfonts/Hack-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('webfonts/Hack-BoldItalic-webfont.woff2') format('woff2'),
+        url('webfonts/Hack-BoldItalic-webfont.woff') format('woff'),
+        url('webfonts/Hack-BoldItalic-webfont.ttf') format('truetype'),
+        url('webfonts/Hack-BoldItalic-webfont.svg#hackbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
