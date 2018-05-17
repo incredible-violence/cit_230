@@ -1,72 +1,45 @@
-/* CIT 230 - Assignment Portal CSS Template */
-/* You may use #HEX or color names */
-
-/* * is a wildcard referring to all elements. */
-* { margin: 0; box-sizing: border-box; }
-
 body {
-    font-size: 16px;
-    line-height: 32px;
-    font-family: hackbold;
-    color: #000000;
-}
-
-h1 {
-    font-size: 2.4rem;
-    color: #000000;
-}
-
-h2 {
-    font-size: 2.0rem;
-    text-align: center;
-    border-bottom: 1px solid #bbb;
-}
-
-header, main, footer {
-    margin: 1.25rem auto;
-    padding: .5rem;
-    max-width: 1000px;
-}
-
-header, footer, footer a {
-    text-align: center;
-    background-color: #a5a5a5;
-    color: whitesmoke;
-}
-
-header img {
-    width: 200px;
-    height: auto;
-    float: right;
-}
-
-footer {
-    font-size: 12px;
-}
-
-li {
-    padding-top: 1em;
-    padding-left: 1em;
-    border-width: 2px;
-    border-style: solid;
-    border-color: gray;
-    margin-left: 4em;
-    margin-right: 36em;
+    font-family: hack;
 
 }
-li a {
-    text-decoration: none;
-    color: #A50020;
-}
 
-footer p a {
-    text-decoration: none;
-    color: white;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /********************************************************************
- * Font Governance
- *******************************************************************/
+* Font Governance
+*******************************************************************/
 @font-face {
     font-family: 'hackregular';
     src: url('webfonts/Hack-Regular-webfont.eot');
@@ -114,8 +87,4 @@ footer p a {
     font-weight: normal;
     font-style: normal;
 }
-
-
-
-/* Link Governance */
 
