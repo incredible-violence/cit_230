@@ -40,14 +40,15 @@ body {
 /********************************************************************
 * Font Governance
 *******************************************************************/
+
 @font-face {
     font-family: 'hackregular';
     src: url('webfonts/Hack-Regular-webfont.eot');
     src: url('webfonts/Hack-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-        url('webfonts/Hack-Regular-webfont.woff2') format('woff2'),
-        url('webfonts/Hack-Regular-webfont.woff') format('woff'),
-        url('webfonts/Hack-Regular-webfont.ttf') format('truetype'),
-        url('webfonts/Hack-Regular-webfont.svg#hackregular') format('svg');
+    url('webfonts/Hack-Regular-webfont.woff2') format('woff2'),
+    url('webfonts/Hack-Regular-webfont.woff') format('woff'),
+    url('webfonts/Hack-Regular-webfont.ttf') format('truetype'),
+    url('webfonts/Hack-Regular-webfont.svg#hackregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -56,10 +57,10 @@ body {
     font-family: 'hackbold';
     src: url('webfonts/Hack-Bold-webfont.eot');
     src: url('webfonts/Hack-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-        url('webfonts/Hack-Bold-webfont.woff2') format('woff2'),
-        url('webfonts/Hack-Bold-webfont.woff') format('woff'),
-        url('webfonts/Hack-Bold-webfont.ttf') format('truetype'),
-        url('webfonts/Hack-Bold-webfont.svg#hackbold') format('svg');
+    url('webfonts/Hack-Bold-webfont.woff2') format('woff2'),
+    url('webfonts/Hack-Bold-webfont.woff') format('woff'),
+    url('webfonts/Hack-Bold-webfont.ttf') format('truetype'),
+    url('webfonts/Hack-Bold-webfont.svg#hackbold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -68,10 +69,10 @@ body {
     font-family: 'hackitalic';
     src: url('webfonts/Hack-Italic-webfont.eot');
     src: url('webfonts/Hack-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-        url('webfonts/Hack-Italic-webfont.woff2') format('woff2'),
-        url('webfonts/Hack-Italic-webfont.woff') format('woff'),
-        url('webfonts/Hack-Italic-webfont.ttf') format('truetype'),
-        url('webfonts/Hack-Italic-webfont.svg#hackitalic') format('svg');
+    url('webfonts/Hack-Italic-webfont.woff2') format('woff2'),
+    url('webfonts/Hack-Italic-webfont.woff') format('woff'),
+    url('webfonts/Hack-Italic-webfont.ttf') format('truetype'),
+    url('webfonts/Hack-Italic-webfont.svg#hackitalic') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -80,11 +81,10 @@ body {
     font-family: 'hackbold_italic';
     src: url('webfonts/Hack-BoldItalic-webfont.eot');
     src: url('webfonts/Hack-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
-        url('webfonts/Hack-BoldItalic-webfont.woff2') format('woff2'),
-        url('webfonts/Hack-BoldItalic-webfont.woff') format('woff'),
-        url('webfonts/Hack-BoldItalic-webfont.ttf') format('truetype'),
-        url('webfonts/Hack-BoldItalic-webfont.svg#hackbold_italic') format('svg');
+    url('webfonts/Hack-BoldItalic-webfont.woff2') format('woff2'),
+    url('webfonts/Hack-BoldItalic-webfont.woff') format('woff'),
+    url('webfonts/Hack-BoldItalic-webfont.ttf') format('truetype'),
+    url('webfonts/Hack-BoldItalic-webfont.svg#hackbold_italic') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-

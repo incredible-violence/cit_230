@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    font-family: hack;
+}
+
+header,
+nav,
+main,
+footer {
+    /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+    max-width: 37.5em;
+    /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+
+header {
+    text-align: center;
+    padding-bottom: 1em;
+    background-color: cadetblue;
+    margin-top: 0;
+    padding: 1em;
+
+}
+
+header h1 {
+    margin-bottom: 0;
+    font-size: 2.4em;
+}
+
+header h4 {
+    margin-top: 0;
+    padding-right: 16%;
+}
+
+header img {}
+
+header .subheading {}
+
+nav {
+}
+
+nav button {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav ul li {
+    display: inline;
+    float: left;
+
+}
+
+nav ul li a {
+    display: block;
+    padding: 8px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul li.active a {
+    background-color: #82b1ff;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+main h2 {}
+
+main figure {
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+}
+
+main figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer .footer-bar {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: .5em;
+}
+footer .contact {
+    text-align: center;
+    margin-bottom: 0;
+    background-color: cadetblue;
+    padding: 1em;
+}
+
+section.weather-summary {
+    text-align: left;
+
+}
+
+section.forecast {
+    display: none;
+}
+
+.current p {
+    font-size: 2em;
+    margin-left: 10%;
+    padding-top: 10
+
+}
+
+picture img {
+    margin-top: -35%;
+    margin-left: 55%;
+    float: right;
+    max-width: 40%;
+    max-height: auto;
+    clear: right;
+    position: absolute;
+}
+
+/********************************************************************
+* Font Governance
+*******************************************************************/
+@font-face {
+    font-family: 'hackregular';
+    src: url('webfonts/Hack-Regular-webfont.eot');
+    src: url('webfonts/Hack-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('webfonts/Hack-Regular-webfont.woff2') format('woff2'),
+        url('webfonts/Hack-Regular-webfont.woff') format('woff'),
+        url('webfonts/Hack-Regular-webfont.ttf') format('truetype'),
+        url('webfonts/Hack-Regular-webfont.svg#hackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hackbold';
+    src: url('webfonts/Hack-Bold-webfont.eot');
+    src: url('webfonts/Hack-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('webfonts/Hack-Bold-webfont.woff2') format('woff2'),
+        url('webfonts/Hack-Bold-webfont.woff') format('woff'),
+        url('webfonts/Hack-Bold-webfont.ttf') format('truetype'),
+        url('webfonts/Hack-Bold-webfont.svg#hackbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hackitalic';
+    src: url('webfonts/Hack-Italic-webfont.eot');
+    src: url('webfonts/Hack-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('webfonts/Hack-Italic-webfont.woff2') format('woff2'),
+        url('webfonts/Hack-Italic-webfont.woff') format('woff'),
+        url('webfonts/Hack-Italic-webfont.ttf') format('truetype'),
+        url('webfonts/Hack-Italic-webfont.svg#hackitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hackbold_italic';
+    src: url('webfonts/Hack-BoldItalic-webfont.eot');
+    src: url('webfonts/Hack-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('webfonts/Hack-BoldItalic-webfont.woff2') format('woff2'),
+        url('webfonts/Hack-BoldItalic-webfont.woff') format('woff'),
+        url('webfonts/Hack-BoldItalic-webfont.ttf') format('truetype'),
+        url('webfonts/Hack-BoldItalic-webfont.svg#hackbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
