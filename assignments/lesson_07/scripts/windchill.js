@@ -1,4 +1,4 @@
-var speed = 10;
+var speed = document.getElementById('windSpeed').innerHTML;
 var hTemp = document.getElementById('hiTmp').innerHTML;
 var lTemp = document.getElementById('loTmp').innerHTML;
 var hTempN = parseInt(hTemp);
