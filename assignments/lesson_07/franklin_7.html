@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Sunflower:300,500" rel="stylesheet">
         <title>Franklin Weather</title>
     </head>
-    <body>
+    <body class="HolyGrail">
         <!-- HEADER -->
         <header>
             <h1>Accuweather</h1>
@@ -19,7 +19,7 @@
         </header>
 
         <!-- NAVIGATION -->
-        <nav class="clearfix">
+        <nav class="clearfix HolyGrail-nav">
             <button onclick='toggleMenu()'>&#9776;</button>
             <ul id='primaryNav' class='hide'>
                 <li><a href="#">Home</a></li>
@@ -32,10 +32,10 @@
         </nav>
 
         <!-- MAIN -->
-        <main>
+        <main class="HolyGrail-content">
             <h2>Franklin, USA</h2>
             <figure>
-            <!--     -->
+            <!-- TODAY'S WEATHER -->
             </figure>
             <section class="weather-summary">
                 <div class="current">
@@ -44,39 +44,31 @@
                         <figcaption>Right Now: Sunny</figcaption>
                     </figure>
                 </div>
-            <!-- WEATHER SUMMARY OLD VERSION
-                <h3>Weather Summary</h3>
-                <div class="highlow">
-                    <p span id='highTemp'>High: 101</p>
-                    <p span id='lowTemp'>Low: 65</p>
-                </div>
-                <div class="conditions">
-                    <p>Precipitation: 0%</p>
-                    <p>Wind Speed: 5 mph SW</p>
-                    <div id='windChill'></div>
-                </div>
-            -->
+
+        <!-- WEATHER SUMMARY -->
             <section class="summary">
                 <h3>Weather Summary</h3>
                 <table>
-                    <thead>
-                        <tr>
-                            <th>High</th>
-                            <th>Low</th>
-                            <th>Precipitation</th>
-                            <th>Wind Speed</th>
-                            <th>Wind Chill</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td span id='hiTmp'>100</td>
-                            <td span id='loTmp'>75</td>
-                            <td>0%</td>
-                            <td>5</td>
-                            <td><div id='windChill'></div></td>
-                        </tr>
-                    </tbody>
+                    <tr>
+                        <th scope='row'>High:</th>
+                        <td span id='hiTmp'>100</td>
+                    </tr>
+                    <tr>
+                        <th scope='row'>Low:</th>
+                        <td span id='loTmp'>75</td>
+                    </tr>
+                    <tr>
+                        <th scope='row'>Precip:</th>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <th scope='row'>Wind Speed:</th>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <th scope='row'>Wind Chill:</th>
+                        <td><div id='windChill'></div></td>
+                    </tr>
                 </table>
                 </section>
             </section>
@@ -148,3 +140,15 @@
         <script src='scripts/windchill.js'></script>
     </body>
 </html>
+<!-- WEATHER SUMMARY OLD VERSION
+<h3>Weather Summary</h3>
+<div class="highlow">
+<p span id='highTemp'>High: 101</p>
+<p span id='lowTemp'>Low: 65</p>
+</div>
+<div class="conditions">
+<p>Precipitation: 0%</p>
+<p>Wind Speed: 5 mph SW</p>
+<div id='windChill'></div>
+</div>
+-->

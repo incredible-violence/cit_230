@@ -102,16 +102,16 @@ main figure img {
 main section.weather-summary .current figure.currentWeather {
     width: 100;
     padding-top: 0%;
-    width: 50%;
-    margin: 0 0 0 0;
-    float: right;
+    display: flex;
+    justify-content: flex-end;
 }
 
 main section.weather-summary .current figure.currentWeather figcaption {
-    text-align: left;
     font-family: 'Sunflower', sans-serif;
     font-size: 1.2em;
     margin-left: 4%;
+    display: flex;
+    justify-content: space-between;
 }
 
 main section.weather-summary {
@@ -162,7 +162,8 @@ article p.town-article {
 }
 
 section.footer-bar {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     background-color: #333;
     color: white;
     padding: .5em;
@@ -193,6 +194,232 @@ section.forecast {
 
 }
 
+.HolyGrail {
+    display: flex;
+    height: 100%; /* 1, 3 */
+    flex-direction: column;
+}
+
+.HolyGrail-header,
+.HolyGrail-footer {
+    flex: none; /* 2 */
+}
+
+.HolyGrail-body {
+    display: flex;
+    flex: 1 0 auto; /* 2 */
+    flex-direction: column;
+    padding: var(--space);
+}
+
+.HolyGrail-content {
+    margin-top: var(--space);
+}
+
+/*
+.HolyGrail-nav {
+    order: -1;
+}
+
+.HolyGrail-nav,
+.HolyGrail-ads {
+    padding: 1em;
+    border-radius: 3px;
+    background: rgba(147, 128, 108, 0.1);
+}
+
+@media (--break-lg) {
+    .HolyGrail-body {
+        flex-direction: row;
+    }
+    .HolyGrail-content {
+        flex: 1;
+        padding: 0 var(--space-lg);
+        margin: 0;
+    }
+    .HolyGrail-nav, .HolyGrail-ads {
+        flex: 0 0 12em;
+    }
+}
+*/
+
+.Grid {
+display: flex;
+}
+
+.Grid-cell {
+flex: 0 0 100%;
+}
+
+/* Alignment per row */
+.Grid--top {
+    align-items: flex-start;
+}
+.Grid--bottom {
+    align-items: flex-end;
+}
+.Grid--center {
+    align-items: center;
+}
+
+/* Alignment per cell */
+.Grid-cell--top {
+    align-self: flex-start;
+}
+.Grid-cell--bottom {
+    align-self: flex-end;
+}
+.Grid-cell--center {
+    align-self: center;
+}
+
+.Site {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* 1, 3 */
+}
+
+.Site-header,
+.Site-footer {
+    flex: none; /* 2 */
+}
+
+.Site-content {
+    flex: 1 0 auto; /* 2 */
+    padding: var(--space) var(--space) 0;
+    width: 100%;
+}
+.Site-content::after {
+    content: '\00a0'; /* &nbsp; */
+    display: block;
+    margin-top: var(--space);
+    height: 0px;
+    visibility: hidden;
+}
+@media (--break-lg) {
+    .Site-content {
+        padding-top: var(--space-lg);
+    }
+    .Site-content::after {
+        margin-top: var(--space-lg);
+    }
+}
+
+.Site-content--full {
+    padding: 0;
+}
+.Site-content--full::after {
+    content: none;
+}
+
+.mosaic {
+    /**
+    * Lay out the children of this container with
+    * flexbox, which is horizontal by default.
+    */
+    display: flex;
+
+    /**
+    * Set the main axis to be vertical instead of
+    * horizontal, so now the children are laid out
+    * vertically, from top to bottom.
+    */
+    flex-direction: column;
+
+    /**
+    * Now when the children wrap, they'll wrap to the
+    * next "column".
+    */
+    flex-wrap: wrap;
+
+    width: 478px;
+    height: 370px;
+    padding: 6px;
+    border: 1px solid #D7DBDD;
+    overflow: auto;
+}
+
+.photo:last-child {
+    /**
+    * This is the first part of a flexbox hack.
+    * It addresses a problem flexbox has with scrolling
+    * content. Without this hack, the children on the
+    * far right of the container will be flush against
+    * the container's right edge.
+    */
+    position: relative;
+}
+
+.photo:last-child::after {
+    /**
+    * This is the second part of the hack. It creates
+    * an invisible element on the last child that
+    * forces a space between the child and the right
+    * edge of the container.
+    */
+    display: block;
+    width: 11px;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    visibility: hidden;
+    content: "";
+}
+
+.photo--small {
+    height: 70px;
+}
+
+.photo--medium {
+    height: 90px;
+}
+
+.photo1 {
+    background-image: url('https://i.imgur.com/mq57ON6.jpg');
+}
+.photo2 {
+    background-image: url('https://i.imgur.com/3otFWmW.jpg');
+}
+.photo3 {
+    background-image: url('https://i.imgur.com/958movK.jpg');
+}
+.photo4 {
+    background-image: url('https://i.imgur.com/doWDjIi.jpg');
+}
+.photo5 {
+    background-image: url('https://i.imgur.com/hdgRmge.jpg');
+}
+.photo6 {
+    background-image: url('https://i.imgur.com/4OCF4nP.jpg');
+}
+.photo7 {
+    background-image: url('https://i.imgur.com/QqfePmb.jpg');
+}
+.photo8 {
+    background-image: url('https://i.imgur.com/YZDuPYj.jpg');
+}
+.photo9 {
+    background-image: url('https://i.imgur.com/Wp22YOu.jpg');
+}
+.photo10 {
+    background-image: url('https://i.imgur.com/vSL9qvj.jpg');
+}
+.photo11 {
+    background-image: url('https://i.imgur.com/tqZIyDk.jpg');
+}
+
+.photo12 {
+    background-image: url('https://i.imgur.com/pU1AiwV.jpg');
+}
+
+.photo13 {
+    background-image: url('https://i.imgur.com/wTD6nUr.jpg');
+}
+
+.photo14 {
+    background-image: url('https://i.imgur.com/luA7O45.jpg');
+}
 
 /********************************************************************
 * Font Governance
