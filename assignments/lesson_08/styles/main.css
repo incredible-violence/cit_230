@@ -40,6 +40,10 @@ tfoot {
     line-height: 30px;
 }
 
+table tbody tr:nth-child(5) td:nth-child(1) {
+    font-style: italic;
+}
+
 td:hover {
     background-color: #638ca6;
     color: white;
