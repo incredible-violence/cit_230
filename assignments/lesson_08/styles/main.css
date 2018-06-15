@@ -1,0 +1,46 @@
+main {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+table {
+    width: 15%;
+    border-collapse: collapse;
+}
+
+table tr {
+    text-align: center;
+    border: 1px solid black;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 7px;
+}
+
+thead, tfoot {
+    background-color: #7fb9c2;
+}
+
+thead {
+    font-size: 1.5rem;
+    padding: .2em;
+    line-height: 50px;
+}
+
+tfoot {
+    font-size: 0.8rem;
+    margin: 5px;
+}
+
+.columnhead {
+    background-color: #628ca6;
+    color: white;
+    width: 100px;
+    margin: 10px;
+    line-height: 30px;
+}
+
+td:hover {
+    background-color: #638ca6;
+    color: white;
+}
