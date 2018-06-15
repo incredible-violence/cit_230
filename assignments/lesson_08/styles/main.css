@@ -5,6 +5,7 @@ main {
 table {
     width: 15%;
     border-collapse: collapse;
+    box-shadow: 5px 5px 10px #628ca6;
 }
 
 table tr {
