@@ -30,6 +30,7 @@ thead {
 tfoot {
     font-size: 0.8rem;
     margin: 5px;
+    text-decoration: none;
 }
 
 .columnhead {
