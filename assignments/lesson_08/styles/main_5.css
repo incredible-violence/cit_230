@@ -1,0 +1,515 @@
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+}
+
+header,
+nav,
+main,
+footer {
+    /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+    max-width: 37.5em;
+    /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+
+header {
+    text-align: center;
+    padding-bottom: 1em;
+    background: url(https://i.imgur.com/wHIdYuP.jpg);
+    margin-top: 0;
+    padding: 1em;
+    font-family: 'hack';
+}
+
+header h1 {
+    margin-bottom: 0;
+    font-size: 2.4em;
+}
+
+header h4 {
+    margin-top: 0;
+    padding-right: 16%;
+}
+
+header img {}
+
+header .subheading {
+    font-family: 'Sunflower', sans-serif;
+    font-size: 1.3em;
+
+}
+
+nav {
+    background-color: #333;
+    font-family: 'Sunflower', sans-serif;
+
+}
+
+nav button {
+    display: block;
+    margin: .2rem 2%;
+    margin-top: 0;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 1.6rem;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid rgba(0,0,0, 0.3);
+}
+
+nav ul li.active a {
+    background-color: #82b1ff;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+nav ul.hide { display: none; }
+
+main h2 {}
+
+main figure {
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+}
+
+main figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+main section.weather-summary .current figure.currentWeather {
+    width: 100;
+    padding-top: 0%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+main section.weather-summary .current figure.currentWeather figcaption {
+    font-family: 'Sunflower', sans-serif;
+    font-size: 1.2em;
+    margin-left: 4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+main section.weather-summary {
+    font-family: 'hack';
+}
+
+main section.forecast h3 {
+    font-family: 'Sunflower', sans-serif;
+}
+
+main section.forecast table {
+    font-family: 'hack', sans-serif;
+    border: 1px solid black;
+    padding-right: 1.7rem;
+
+}
+
+main section.forecast table thead tr th {
+    padding-left: 2rem;
+    text-decoration: bold;
+}
+
+main section.forecast table tbody tr td {
+    padding-left: 2rem;
+}
+
+article {
+    margin-top: 4em;
+    margin-bottom: 2em;
+    font-family: 'hack', sans-serif;
+}
+
+article h3 {
+    font-family: 'Sunflower', sans-serif;
+    font-size: 2rem;
+}
+
+article figure.articlePic {
+    width: 100;
+    padding-top: 0%;
+    width: 45%;
+    margin: 0 2% 0 0;
+    float: left;
+}
+
+article p.town-article {
+    margin-left:
+}
+
+section.footer-bar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    color: white;
+    padding: .5em;
+    font-family: 'Sunflower', sans-serif;
+}
+
+footer section.contact {
+    text-align: center;
+    margin-bottom: 0;
+    background-color: cadetblue;
+    padding: .01rem;
+    font-family: 'hack', sans-serif;
+}
+
+section.weather-summary {
+    text-align: left;
+}
+
+section.forecast {
+    display: none;
+}
+
+.current p {
+    font-size: 2em;
+    margin-left: 10%;
+    padding-top: 10;
+    font-family: 'Sunflower', sans-serif;
+
+}
+
+.HolyGrail {
+    display: flex;
+    height: 100%; /* 1, 3 */
+    flex-direction: column;
+}
+
+.HolyGrail-header,
+.HolyGrail-footer {
+    flex: none; /* 2 */
+}
+
+.HolyGrail-body {
+    display: flex;
+    flex: 1 0 auto; /* 2 */
+    flex-direction: column;
+    padding: var(--space);
+}
+
+.HolyGrail-content {
+    margin-top: var(--space);
+}
+
+/*
+.HolyGrail-nav {
+    order: -1;
+}
+
+.HolyGrail-nav,
+.HolyGrail-ads {
+    padding: 1em;
+    border-radius: 3px;
+    background: rgba(147, 128, 108, 0.1);
+}
+
+@media (--break-lg) {
+    .HolyGrail-body {
+        flex-direction: row;
+    }
+    .HolyGrail-content {
+        flex: 1;
+        padding: 0 var(--space-lg);
+        margin: 0;
+    }
+    .HolyGrail-nav, .HolyGrail-ads {
+        flex: 0 0 12em;
+    }
+}
+*/
+.currentWeather figcaption {
+}
+
+.Grid {
+display: flex;
+}
+
+.Grid-cell {
+flex: 0 0 100%;
+}
+
+/* Alignment per row */
+.Grid--top {
+    align-items: flex-start;
+}
+.Grid--bottom {
+    align-items: flex-end;
+}
+.Grid--center {
+    align-items: center;
+}
+
+/* Alignment per cell */
+.Grid-cell--top {
+    align-self: flex-start;
+}
+.Grid-cell--bottom {
+    align-self: flex-end;
+}
+.Grid-cell--center {
+    align-self: center;
+}
+
+.Site {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* 1, 3 */
+}
+
+.Site-header,
+.Site-footer {
+    flex: none; /* 2 */
+}
+
+.Site-content {
+    flex: 1 0 auto; /* 2 */
+    padding: var(--space) var(--space) 0;
+    width: 100%;
+}
+.Site-content::after {
+    content: '\00a0'; /* &nbsp; */
+    display: block;
+    margin-top: var(--space);
+    height: 0px;
+    visibility: hidden;
+}
+@media (--break-lg) {
+    .Site-content {
+        padding-top: var(--space-lg);
+    }
+    .Site-content::after {
+        margin-top: var(--space-lg);
+    }
+}
+
+.Site-content--full {
+    padding: 0;
+}
+.Site-content--full::after {
+    content: none;
+}
+
+/* GALLERY */
+
+main h2.container {
+    font-family: 'hack';
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.mosaic {
+    display: flex;
+    flex-wrap: wrap;
+    padding 0 4px;
+}
+
+.mosaic .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.mosaic .column1 {
+    margin-right: 11%;
+}
+
+.mosaic .column2 {
+    margin-left: 11%;
+}
+.mosaic .column .photo {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/****************
+ * STORM CENTER
+*****************/
+#stormcenterhead {
+    font-family: 'hack', sans-serif;
+    font-size: 2.5rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Sunflower', sans-serif;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    background-color: #98A9B0;
+}
+
+form legend {
+    color: black;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 1.5rem
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: darkslateblue;
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1ps grey;
+    border-radius: 4px;
+    padding: .75rem;
+    color: darkgray;
+    width: 100%;
+    max-width: 20rem;
+    background-color: lightblue;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 0;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form fieldset div.dangerdiv {
+    color: black;
+    font-size: 1.2rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.rad {
+    display: inline-block;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+#thanks {
+    font-family: 'Sunflower', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 20%;
+    border: 2px solid grey;
+    padding: 2rem;
+    border-radius: 20px;
+}
+/********************************************************************
+* Font Governance
+*******************************************************************/
+
+/* GOOGLE FONTS */
+
+
+/* font-family: 'Sunflower', sans-serif; */
+
+
+
+@font-face {
+    font-family: 'hackregular';
+    src: url('webfonts/Hack-Regular-webfont.eot');
+    src: url('webfonts/Hack-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('webfonts/Hack-Regular-webfont.woff2') format('woff2'),
+        url('webfonts/Hack-Regular-webfont.woff') format('woff'),
+        url('webfonts/Hack-Regular-webfont.ttf') format('truetype'),
+        url('webfonts/Hack-Regular-webfont.svg#hackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hackbold';
+    src: url('webfonts/Hack-Bold-webfont.eot');
+    src: url('webfonts/Hack-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('webfonts/Hack-Bold-webfont.woff2') format('woff2'),
+        url('webfonts/Hack-Bold-webfont.woff') format('woff'),
+        url('webfonts/Hack-Bold-webfont.ttf') format('truetype'),
+        url('webfonts/Hack-Bold-webfont.svg#hackbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hackitalic';
+    src: url('webfonts/Hack-Italic-webfont.eot');
+    src: url('webfonts/Hack-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('webfonts/Hack-Italic-webfont.woff2') format('woff2'),
+        url('webfonts/Hack-Italic-webfont.woff') format('woff'),
+        url('webfonts/Hack-Italic-webfont.ttf') format('truetype'),
+        url('webfonts/Hack-Italic-webfont.svg#hackitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hackbold_italic';
+    src: url('webfonts/Hack-BoldItalic-webfont.eot');
+    src: url('webfonts/Hack-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('webfonts/Hack-BoldItalic-webfont.woff2') format('woff2'),
+        url('webfonts/Hack-BoldItalic-webfont.woff') format('woff'),
+        url('webfonts/Hack-BoldItalic-webfont.ttf') format('truetype'),
+        url('webfonts/Hack-BoldItalic-webfont.svg#hackbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
