@@ -1,0 +1,61 @@
+{
+    "squadName" : "The X-Men: Original Team",
+    "homeTown" : "Salem, NewYork",
+    "formed" : 1963,
+    "secretBase" : "Xavier's School for Gifted Youngsters",
+    "active" : true,
+    "members" : [
+        {
+            "name" : "Cyclops",
+            "age" : 39,
+            "secretIdentity" : "Scott Summers",
+            "powers" : [
+                "Eye Lazers which are actually portals to a dimension comprised entirely of energy"
+            ]
+        },
+        {
+            "name" : "Marvel Girl",
+            "age" : 32,
+            "secretIdentity" : "Jean Grey",
+            "powers" : [
+                "telepathy",
+                "telekinesis",
+                "ability to resurrect like a million times because the plot demands it"
+            ]
+        },
+        {
+            "name" : "Beast",
+            "age" : 25,
+            "secretIdentity" : "Henry Philip 'Hank' McCoy",
+            "powers" : [
+                "Feet Hands",
+                "Super Intelligence",
+                "Fantastic Fur",
+                "Absolute Unit"
+            ]
+        },
+        {
+            "name" : "Angel",
+            "age" : 22,
+            "secretIdentity" : "Warren Kenneth Worthington III",
+            "powers" : [
+                "Wings",
+                "Bird Bones",
+                "Bird Breathing",
+                "Bird Eye Resistance",
+                "Knowledge of The Word"
+            ]
+        },
+        {
+            "name" : "Iceman",
+            "age" : 24,
+            "secretIdentity" : "Robert Louis 'Bobby' Drake",
+            "powers" : [
+                "Can control and manipulate Ice on a planetary scale"
+            ]
+        },
+
+    ]
+
+
+}

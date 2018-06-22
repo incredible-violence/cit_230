@@ -1,0 +1,123 @@
+{
+    "squadName" : "The X-Men: Original Team",
+    "homeTown" : "Salem, NewYork",
+    "formed" : 1963,
+    "secretBase" : "Xavier's School for Gifted Youngsters",
+    "active" : true,
+    "members" : [
+        {
+            "name" : "Cyclops",
+            "age" : 39,
+            "secretIdentity" : "Scott Summers",
+            "powers" : [
+                "Eye Lazers which are actually portals to a dimension comprised entirely of energy"
+            ]
+        },
+        {
+            "name" : "Marvel Girl",
+            "age" : 32,
+            "secretIdentity" : "Jean Grey",
+            "powers" : [
+                "telepathy",
+                "telekinesis",
+                "ability to resurrect like a million times because the plot demands it"
+            ]
+        },
+        {
+            "name" : "Beast",
+            "age" : 25,
+            "secretIdentity" : "Henry Philip 'Hank' McCoy",
+            "powers" : [
+                "Feet Hands",
+                "Super Intelligence",
+                "Fantastic Fur",
+                "Absolute Unit"
+            ]
+        },
+        {
+            "name" : "Angel",
+            "age" : 22,
+            "secretIdentity" : "Warren Kenneth Worthington III",
+            "powers" : [
+                "Wings",
+                "Bird Bones",
+                "Bird Breathing",
+                "Bird Eye Resistance",
+                "Knowledge of The Word"
+            ]
+        },
+        {
+            "name" : "Iceman",
+            "age" : 24,
+            "secretIdentity" : "Robert Louis 'Bobby' Drake",
+            "powers" : [
+                "Can control and manipulate Ice on a planetary scale"
+            ]
+        }
+
+    ]
+
+}
+
+{
+    "squadName" : "The Avengers: Original Team",
+    "homeTown" : "New York, NewYork",
+    "formed" : 1963,
+    "secretBase" : "Avenger's Tower",
+    "active" : true,
+    "members" : [
+        {
+            "name" : "Ant-Man",
+            "age" : 39,
+            "secretIdentity" : "Hank Pym",
+            "powers" : [
+                "Shrink or grow in size",
+                "Can control ants"
+            ]
+        },
+        {
+            "name" : "Thor",
+            "age" : 1100,
+            "secretIdentity" : "Thor Odinson",
+            "powers" : [
+                "Can wield Mjolnir",
+                "Super-durability",
+                "Super-strength",
+                "Fantastic Hair",
+                "Funcitonally Immortal",
+                "Can summon and control lightning"
+            ]
+        },
+        {
+            "name" : "Iron Man",
+            "age" : 40,
+            "secretIdentity" : "Tony Stark",
+            "powers" : [
+                "Super Intelligent",
+                "Super Rich"
+            ]
+        },
+        {
+            "name" : "The Wasp",
+            "age" : 35,
+            "secretIdentity" : "Janet van Dyne",
+            "powers" : [
+                "Ability to shrink",
+                "Flying",
+                "Energy Blasts"
+            ]
+        },
+        {
+            "name" : "The Incredible Hulk",
+            "age" : 30,
+            "secretIdentity" : "Bruce Banner",
+            "powers" : [
+                "The angrier he gets, the stronger he gets in Hulk form",
+                "Smashing",
+                "Being one of the only beings in the universe Thanos actively avoids conflict with (in the comics)"
+            ]
+        }
+
+    ]
+
+}
