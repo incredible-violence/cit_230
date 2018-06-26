@@ -47,18 +47,20 @@ footer {
 ul {
     margin-top: 2rem;
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: left;
 }
 
 li {
     padding-top: 1em;
+    padding-bottom: 0.7em;
     padding-left: 1em;
-    border-width: 2px;
-    border-style: solid;
-    border-color: gray;
-    margin-left: 4em;
-    margin-right: 36em;
+    border: 2px solid gray;
     text-decoration: none;
-
 }
 
 li a {
