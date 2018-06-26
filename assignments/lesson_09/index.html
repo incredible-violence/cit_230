@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Assignment portal page for James Kennedy in CIT 230: Web Frontend Development @ BYUI">
+        <link rel='stylesheet' href='styles/normalize.css'>
+        <link rel='stylesheet' href='styles/main_5.css'>
+        <link rel='stylesheet' href='styles/medium_5.css'>
+        <link rel='stylesheet' href='styles/large_5.css'>
+        <link href="https://fonts.googleapis.com/css?family=Sunflower:300,500" rel="stylesheet">
+        <title>Accuweather Homepage</title>
+    </head>
+    <body class="HolyGrail">
+        <!-- HEADER -->
+        <header>
+            <h1>Accuweather</h1>
+            <div class='subheading'>Weather, Accurately</div>
+        </header>
+
+        <!-- NAVIGATION -->
+        <nav class="clearfix HolyGrail-nav">
+            <button onclick='toggleMenu()'>&#9776;</button>
+            <ul id='primaryNav' class='hide'>
+                <li><a href="#">Home</a></li>
+                <li><a href="franklin_8.html">Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery_7.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="jsonSection">
+            </section>
+            <!-- JSON -->
+            <script>
+                var section = document.querySelector('section');
+                /* STORE URL OF THE JSON WE WANT */
+                var requestURL = 'https://api.myjson.com/bins/1h2tw6';
+                // request creation
+                var request = new XMLHttpRequest();
+                // open method
+                request.open('GET', requestURL);
+                // response governance
+                request.responseType = 'json';
+                request.send();
+                // function
+                request.onload = function() {
+                    var towns = request.response;
+                    showTowns(towns);
+                }
+
+                function showTowns(jsonObj) {
+                    var townNames = jsonObj['towns'];
+
+                    for (var i = 0; i < townNames.length; i++) {
+                        var myArticle = document.createElement('article');
+                        var myH2 = document.createElement('h2');
+                        var myPara1 = document.createElement('p');
+                        var myPara2 = document.createElement('p');
+                        var myPara3 = document.createElement('p');
+                        var myPara4 = document.createElement('p');
+                        var myList = document.createElement('ul');
+
+                        myH2.textContent = townNames[i].name;
+                        myPara1.textContent = 'Motto: ' + townNames[i].motto;
+                        myPara2.textContent = 'Year Founded: ' + townNames[i].yearFounded;
+                        myPara3.textContent = 'Current Population: ' + townNames[i].currentPopulation;
+                        myPara4.textContent = 'Average Rainfall: ' + townNames[i].averageRainfall;
+
+                        var townEvents = townNames[i].events;
+                        for (var j = 0; j < townEvents.length; j++) {
+                            var listItem = document.createElement('li');
+                            listItem.textContent = townEvents[j];
+                            myList.appendChild(listItem);
+                        }
+
+                        myArticle.appendChild(myH2);
+                        myArticle.appendChild(myPara1);
+                        myArticle.appendChild(myPara2);
+                        myArticle.appendChild(myPara3);
+                        myArticle.appendChild(myPara4);
+                        myArticle.appendChild(myList);
+
+                        section.appendChild(myArticle);
+                    }
+                }
+            </script>
+
+        </main>
+        <!-- FOOTER -->
+        <footer>
+            <section class="contact">
+                <h3>AccuCorp</h3>
+                (123)456-7890
+                123 Main St. Franklin, US 99999
+                <a href='#'>Location</a>
+            </section>
+            <section class="footer-bar">&copy;2018 | All Rights Reserved | AccuWeather | <span id="currentdate"></span>
+            </section>
+        </footer>
+        <script src="scripts/currentdate.js"></script>
+        <script src='scripts/toggleMenu.js'></script>
+        <script src='scripts/windchill.js'></script>
+    </body>
+</html>
