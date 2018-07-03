@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <link rel='stylesheet' href='styles/normalize.css'>
+        <link rel='stylesheet' href='styles/main.css'>
+        <link rel='stylesheet' href='styles/medium.css'>
+        <link rel='stylesheet' href='styles/large.css'>
+        <link rel='stylesheet' href='styles/home-styles.css'>
+        <link href="https://fonts.googleapis.com/css?family=Sunflower:300,500" rel="stylesheet">
+        <title>Accuweather Home</title>
+    </head>
+    <body class="HolyGrail">
+        <!-- HEADER -->
+        <header>
+            <div class='logo'>
+                <img src="images/logo.png" alt='logo' id='logo'>
+            </div>
+            <div class='title'>
+                <h1>Accuweather</h1>
+                <p class='subheading'>Weather, Accurately</p>
+            </div>
+        </header>
+
+        <!-- NAVIGATION -->
+        <nav class="clearfix HolyGrail-nav">
+            <button onclick='toggleMenu()'>&#9776;</button>
+            <ul id='primaryNav' class='hide'>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li><a href="springfield.html">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <article id='weatherStory'>
+                <h2 class='secondHeading'>Weather Story</h2>
+                <img src="images/franklin-cropped.jpg" alt='beachweather' id='weatherStoryImage'>
+                <p>This is a paragraph about weather which happened recently.  Maybe it was a flood. Maybe it was a hurricaine. Maybe it was literally raining cats and dogs.  Who is to say what happened which was so noteworthy as to warrant a whole paragraph on a website. I'll bet it has something to do with Al Gore and global climate change. Certainly global climate change is involved in some way. The rest of this paragraph is not going to be comedic, it's just going to be filler.  Filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler</p>
+            </article>
+
+            <h2 class='secondHeading' id='citiesHeading'>Cities at a Glance</h2>
+            <section id="jsonSection">
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <footer>
+            <section class="contact">
+                <h3>AccuCorp</h3>
+                (123)456-7890
+                123 Main St. Franklin, US 99999
+                <a href='#'>Location</a>
+            </section>
+            <section class="footer-bar">&copy;2018 | All Rights Reserved | AccuWeather | <span id="currentdate"></span>
+            </section>
+        </footer>
+        <script src="scripts/currentdate.js"></script>
+        <script src='scripts/toggleMenu.js'></script>
+        <script src='scripts/windchill.js'></script>
+        <script src='scripts/mainpage.js'></script>
+    </body>
+</html>

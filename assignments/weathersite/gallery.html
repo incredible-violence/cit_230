@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <link rel='stylesheet' href='styles/normalize.css'>
+        <link rel='stylesheet' href='styles/main.css'>
+        <link rel='stylesheet' href='styles/medium.css'>
+        <link rel='stylesheet' href='styles/large.css'>
+        <link rel='stylesheet' href="styles/gallery-styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Sunflower:300,500" rel="stylesheet">
+        <title>Franklin Weather</title>
+    </head>
+    <body class="HolyGrail">
+        <!-- HEADER -->
+        <header>
+            <div class='logo'>
+                <img src="images/logo.png" alt='logo' id='logo'>
+            </div>
+            <div class='title'>
+                <h1>Accuweather</h1>
+                <p class='subheading'>Weather, Accurately</p>
+            </div>
+        </header>
+
+        <!-- NAVIGATION -->
+        <nav class="clearfix HolyGrail-nav">
+            <button onclick='toggleMenu()'>&#9776;</button>
+            <ul id='primaryNav' class='hide'>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li><a href="springfield.html">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main class="Site">
+            <h2 class="container">Gallery</h2>
+            <div class="mosaic">
+                <div class='column column1'>
+                    <div class="photo">1
+                        <img src='images/g1.jpg'>
+                    </div>
+                    <div class="photo">2
+                        <img src='images/g2.jpg'>
+                    </div>
+                    <div class="photo">3
+                        <img src="images/g3.jpg">
+                    </div>
+                    <div class="photo">4
+                        <img src='images/g4.jpg'>
+                    </div>
+                    <div class="photo">5
+                        <img src='images/g5.jpg'>
+                    </div>
+                    <div class="photo">6
+                        <img src="images/g6.jpg">
+                    </div>
+                    <div class="photo">7
+                        <img src='images/g7.jpg'>
+                    </div>
+                </div>
+                <div class='column column2'>
+                    <div class="photo">8
+                        <img src="images/g8.jpg">
+                    </div>
+                    <div class="photo">9
+                        <img src='images/g9.jpg'>
+                    </div>
+                    <div class="photo">10
+                        <img src='images/g10.jpg'>
+                    </div>
+                    <div class="photo">11
+                        <img src='images/g11.jpg'>
+                    </div>
+                    <div class="photo">12
+                        <img src='images/g12.jpg'>
+                    </div>
+                    <div class="photo">13
+                        <img src='images/g13.jpg'>
+                    </div>
+                    <div class="photo">14
+                        <img src="images/g14.jpg"></div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <section class="contact">
+                <h3>AccuCorp</h3>
+                (123)456-7890
+                123 Main St. Franklin, US 99999
+                <a href='#'>Location</a>
+            </section>
+            <section class="footer-bar">&copy;2018 | All Rights Reserved | AccuWeather | <span id="currentdate"></span>
+            </section>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,14 @@
+nav ul li:nth-child(6) a {
+    background-color: white;
+    color: #54698c;
+}
+
+.photo img {
+    max-width: 700px;
+    max-height: 700px;
+}
+
+.mosaic {
+    align-items: center;
+    justify-content: center;
+}
