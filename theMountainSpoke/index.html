@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="The Mountain Speaks Main Page">
+        <link rel='stylesheet' href='styles/normalize.css'>
+        <link rel='stylesheet' href='styles/main.css'>
+        <link rel='stylesheet' href='styles/medium.css'>
+        <link rel='stylesheet' href='styles/large.css'>
+        <link rel='stylesheet' href='styles/home.css'>
+        <link href="https://fonts.googleapis.com/css?family=Exo+2|Montserrat:400,700" rel="stylesheet">
+        <title>The Mountain Spoke</title>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header>
+            <div class='logo'>
+                <img src='images/bike.png' alt='logo' id='logo'>
+            </div>
+            <div class='title'>
+                <h1>The Mountain Spoke</h1>
+                <p class='subheading'>Mountain Biking and Montana</p>
+            </div>
+        </header>
+
+        <!-- NAV -->
+        <nav>
+            <!-- BUTTON FOR SMALL VIEW -->
+            <button onclick='toggleMenu()'>&#9776;</button>
+            <ul id='navBar' class='hide'>
+                <li><a href="index.html">Home</a></li>
+                <li><a href='adventure.html'>Adventure Tours</a></li>
+                <li><a href='events.html'>Events</a></li>
+                <li><a href='sales.html'>Sales</a></li>
+                <li><a href='services.html'>Services</a></li>
+                <li><a href='contact.html'>Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- MAIN -->
+        <main>
+            <div id='calltoaction'>
+                <h2>BIKE WITH US TODAY!</h2>
+            </div>
+            <img src="images/trail0.jpg" alt='bike0' id='img1'>
+            <div id='currentevent'>
+                <h3>TODAY'S EVENT</h3>
+                <img src='images/racing0.jpg' alt='imge' id='eventimg'>
+                <p>Today's event is a 10k race through beautiful preserved forest, looping wonderful Lake Montana. Registration information can be found <a href="events.html">HERE</a> on the events page. Participants must demonstrate at least intermediate level skill in both bicycling and wilderness survival, as there are sections of the trail which have poison ivy. This could be dangerous for racers as it is rather nasty to deal with, particularly if the oil from the plant's leaves were to get on parts of the racer's body that would make sitting on a bike seat uncomfortable.  It is for this reason that we recommend at least minimal knowledge of various local plant life.  Well, that and the moose. They're rutting right now, and it would be rather unfortunate if a racer didn't know how to handle a moose encounter. Far better to know beforehand than after.  Moose can be very territorial, and weighing in at over 2000 pounds, they can cause some trouble if they wanted to.  Luckily they are mostly benign creatures.  </p>
+            </div>
+            <h3 id='maphead'>Our Location</h3>
+            <div id="map">
+            </div>
+            <script>
+                function initMap() {
+                    var bozeman = {lat: 45.672273, lng: -111.090717};
+                    // The map, centered at Uluru
+                    var map = new google.maps.Map(
+                        document.getElementById('map'), {zoom: 9, center: bozeman});
+                    // The marker, positioned at Uluru
+                    var marker = new google.maps.Marker({position: bozeman, map: map});
+                }
+            </script>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <section class="contact">
+                <h3>The Mountain Spoke</h3>
+                (123)456-7890 3950 Valley Commons Drive Bozeman, MT 99999
+                <a href='contact.html'>Map</a>
+            </section>
+            <section class="footer-bar">&copy;2018 | All Rights Reserved | James Kennedy |&nbsp;<span id="currentdate"></span> |&nbsp;<a href='https://www.youtube.com/watch?v=krRm1Em47dE'>Overview Video</a>
+            </section>
+        </footer>
+        <script src='scripts/currentdate.js'></script>
+        <script src='scripts/toggleMenu.js'></script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-qpzvQQpTtGV26sfzAY0qhEY8zKC6WYM&callback=initMap">
+        </script>
+    </body>
+</html>

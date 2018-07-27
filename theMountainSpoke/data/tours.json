@@ -1,0 +1,27 @@
+{
+    "adventures": {
+        "tours": [
+            {
+                "name": "Lakeside Adventure",
+                "length": "Short",
+                "skill": "Beginner",
+                "cost": "$100",
+                "location": "City Hall"
+            },
+            {
+                "name": "Rolling Hills Adventure",
+                "length": "Medium",
+                "skill": "Intermediate",
+                "cost": "$200",
+                "location": "Bozeman General Store"
+            },
+            {
+                "name": "Mountain Adventure",
+                "length": "Long",
+                "skill": "Advanced",
+                "cost": "$300",
+                "location": "Belgrade Lodge"
+            }
+        ]
+    }
+}

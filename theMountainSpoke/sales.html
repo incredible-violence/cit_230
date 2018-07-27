@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The Mountain Speaks Main Page">
+    <link rel='stylesheet' href='styles/normalize.css'>
+    <link rel='stylesheet' href='styles/main.css'>
+    <link rel='stylesheet' href='styles/medium.css'>
+    <link rel='stylesheet' href='styles/large.css'>
+    <link rel='stylesheet' href='styles/sal.css'>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2|Montserrat:400,700" rel="stylesheet">
+    <title>The Mountain Spoke</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class='logo'>
+            <img src='images/bike.png' alt='logo' id='logo'>
+        </div>
+        <div class='title'>
+            <h1>The Mountain Spoke</h1>
+            <p class='subheading'>Mountain Biking and Montana</p>
+        </div>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+        <!-- BUTTON FOR SMALL VIEW -->
+        <button onclick='toggleMenu()'>&#9776;</button>
+        <ul id='navBar' class='hide'>
+            <li><a href="index.html">Home</a></li>
+            <li><a href='adventure.html'>Adventure Tours</a></li>
+            <li><a href='events.html'>Events</a></li>
+            <li><a href='sales.html'>Sales</a></li>
+            <li><a href='services.html'>Services</a></li>
+            <li><a href='contact.html'>Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+        <section id='sales'>
+            <div class='row'>
+                <div class='column'>
+                    <img src="images/bikes/cannondale1.png" alt="cannondale1">
+                </div>
+                <div class='column'>
+                    <h2>Cannondale Mountain Bike</h2>
+                    <ul>
+                        <li>25 Speeds</li>
+                        <li>Special 1-Armed Front Fork for Weight Conservation</li>
+                        <li>Perfectly Tuned Suspension</li>
+                        <li>Price: $1500</li>
+                    </ul>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='column'>
+                    <img src="images/bikes/specializedBike.png" id='specialized'>
+                </div>
+                <div class='column'>
+                    <h2>Specialized Mountain Bike</h2>
+                    <ul>
+                        <li>25 Speeds</li>
+                        <li>Special 1-Armed Front Fork for Weight Conservation</li>
+                        <li>Excellent Quality Disk Brakes</li>
+                        <li>Price: $1400</li>
+                    </ul>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='column'>
+                    <img src='images/bikes/specialized2.png'>
+                </div>
+                <div class='column'>
+                    <h2>Specialized Mountain Bike Version 2</h2>
+                    <ul>
+                        <li>55 Speeds</li>
+                        <li>Special 1-Armed Front Fork for Weight Conservation</li>
+                        <li>Carbon Fiber Frame</li>
+                        <li>Excellent Quality Disk Brakes</li>
+                        <li>Price: $1600</li>
+                    </ul>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='column'>
+                    <img src="images/bikes/yeti.png">
+                </div>
+                <div class='column'>
+                    <h2>Yeti Downhill Racing Bike</h2>
+                    <ul>
+                        <li>24 Speeds</li>
+                        <li>Carbon Fiber Frame</li>
+                        <li>Excellent Quality Disk Brakes</li>
+                        <li>Price: $2400</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+    <footer>
+        <section class="contact">
+            <h3>The Mountain Spoke</h3>
+            (123)456-7890 3950 Valley Commons Drive Bozeman, MT 99999
+            <a href='contact.html'>Map</a>
+        </section>
+        <section class="footer-bar">&copy;2018 | All Rights Reserved | James Kennedy |&nbsp;<span id="currentdate"></span>
+        </section>
+    </footer>
+    <script src='scripts/currentdate.js'></script>
+    <script src='scripts/toggleMenu.js'></script>
+</body>
+</html>

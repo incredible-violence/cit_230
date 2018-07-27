@@ -1,0 +1,507 @@
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+}
+
+header,
+nav,
+main,
+footer {
+    /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+    max-width: 37.5em;
+    /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+
+/* HEADER STUFF */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 1em;
+    background: url("https://i.imgur.com/BOExiq7.jpg");
+    margin-top: 0;
+    padding: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#logo {
+    max-height: 150px;
+    float: left;
+    margin-left: 0%;
+}
+
+header h1 {
+    margin-top: 4rem;
+    margin-left: 0;
+    font-size: 2.4em;
+}
+
+header .subheading {
+    font-family: 'hack', sans-serif;
+    font-size: 1.3em;
+    margin: 0;
+
+}
+
+/* NAV STUFF */
+
+nav {
+    background-color: #b7b7b7;
+    font-family: 'Sunflower', sans-serif;
+
+}
+
+nav button {
+    display: block;
+    margin: .2rem 2%;
+    margin-top: 0;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 1.6rem;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #b7b7b7;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: black;
+    border-top: 1px solid rgba(0,0,0, 0.3);
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+nav ul li.active a {
+    background-color: #82b1ff;
+}
+
+nav ul li a:hover {
+    background-color: #D2693A;
+    color: white;
+}
+
+nav ul.hide { display: none; }
+
+/* FOOTER STUFF */
+
+footer section.contact {
+    text-align: center;
+    margin-bottom: 0;
+    background-color: #D2693A;
+    padding: .01rem;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    clear: both;
+}
+
+footer section.contact h3 {
+    font-family: "Exo 2", sans-serif;
+}
+
+section.footer-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #b7b7b7;
+    color: black;
+    padding: .5em;
+    font-family: '', sans-serif;
+    width: 100%;
+    clear: both;
+}
+
+@media screen and (max-width 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* HOME PAGE MAIN */
+main {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#calltoaction h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: tan;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+#img1 {
+    display: block;
+    border-radius: .5rem;
+    align-content: center;
+}
+
+#eventimg {
+    float: right;
+    max-width: 400px;
+    margin-bottom: 50%;
+    border-radius: .5rem;
+}
+
+#currentevent h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#currentevent p {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.1rem;
+}
+
+#maphead {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7rem;
+}
+
+#map {
+    height: 600px;  /* The height is 400 pixels */
+    width: 900px;  /* The width is the width of the web page */
+}
+
+/* ADVENTURE TOURS */
+/* section styles */
+
+#adventure {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-content: center;
+}
+
+#sectionhead {
+    padding: 20px;
+}
+
+section article {
+    width: 600px;
+    height: 300px;
+    display: block;
+    padding: 1rem;
+    margin-bottom: 25px;
+    background-color: tan;
+    color: black;
+    border: 1px solid ;
+    border-radius: 1rem;
+}
+
+section p {
+    margin: 5px 0;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.5rem;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    letter-spacing: -2px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+}
+
+.row {
+    margin-bottom: 25px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+
+    section article, .bigarticle {
+        width: 400px;
+    }
+
+    section p {
+        padding-bottom: 5px;
+    }
+
+    .col1 {
+        width: 100%;
+    }
+
+    .dimage img {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+.column img {
+    width: 400px;
+    height: 300px;
+    border-radius: 1rem;
+}
+
+/* EVENTS PAGE */
+
+.col1 ul h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+}
+
+.col1 ul li {
+    font-family: "Exo 2", sans-serif;
+    font-size: 1.3rem
+}
+
+#cycletheD {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-content: center;
+}
+
+.dimage img {
+    width: 750px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.bigarticle {
+    background-color: white;
+    border: none;
+}
+
+#regForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#regForm fieldset {
+    margin: 2rem 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    background-color: beige;
+
+}
+
+#regForm fieldset legend {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 1.5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: darkslateblue;
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1ps grey;
+    border-radius: 4px;
+    padding: .75rem;
+    color: darkgray;
+    background-color: lightblue;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 0;
+    max-width: 20rem;
+    align-self: center;
+}
+
+form fieldset div.dangerdiv {
+    color: black;
+    font-size: 1.2rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.rad {
+    display: inline-block;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+#thanks {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 20%;
+    border: 2px solid grey;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+/* SALES */
+#sales img {
+    width: 400px;
+}
+
+#sales li {
+    font-family: 'Exo 2';
+    font-size: 1.5rem;
+}
+
+#specialized {
+    width: 400px;
+}
+
+/* SERVICES */
+#serviceHead {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    border: 1px solid black;
+}
+
+table tr th {
+    font-family: "Exo 2";
+    font-weight: bold;
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #dddddd;
+}
+
+#serviceImg {
+    width: 700px;
+    height: 400px;
+}
+
+td {
+    font-family: 'Exo 2', monospace;
+}
+
+tr:nth-child(even) {
+    background-color: burlywood;
+}
+
+/* CONTACT US */
+#contHead {
+    font-family: "Montserrat", monospace;
+    font-size: 2rem;
+}
+
+#fline {
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.address {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: .1rem;
+
+    font-family: 'Exo 2', monospace;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+#map2head {
+    font-family: 'Montserrat', monospace;
+    font-size: 1.6rem;
+}
+
+#map2 {
+    height: 500px;
+}
+
+#conForm {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+#conForm fieldset {
+    margin: 2rem 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    background-color: beige;
+
+}
+
+#conForm fieldset legend {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 1.5rem;
+}

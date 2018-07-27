@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The Mountain Speaks Main Page">
+    <link rel='stylesheet' href='styles/normalize.css'>
+    <link rel='stylesheet' href='styles/main.css'>
+    <link rel='stylesheet' href='styles/medium.css'>
+    <link rel='stylesheet' href='styles/large.css'>
+    <link rel='stylesheet' href='styles/adv.css'>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2|Montserrat:400,700" rel="stylesheet">
+    <title>The Mountain Spoke</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class='logo'>
+            <img src='images/bike.png' alt='logo' id='logo'>
+        </div>
+        <div class='title'>
+            <h1>The Mountain Spoke</h1>
+            <p class='subheading'>Mountain Biking and Montana</p>
+        </div>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+        <!-- BUTTON FOR SMALL VIEW -->
+        <button onclick='toggleMenu()'>&#9776;</button>
+        <ul id='navBar' class='hide'>
+            <li><a href="index.html">Home</a></li>
+            <li><a href='adventure.html'>Adventure Tours</a></li>
+            <li><a href='events.html'>Events</a></li>
+            <li><a href='sales.html'>Sales</a></li>
+            <li><a href='services.html'>Services</a></li>
+            <li><a href='contact.html'>Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+        <section id='adventure'>
+            <h2 id='sectionhead'>Regularly Scheduled Adventures</h2>
+            <div class='row'>
+                <div class='column'>
+                    <article>
+                        <h2>Lakeside Adventure</h2>
+                        <p>Length: Short</p>
+                        <p>Skill Required: Beginner</p>
+                        <p>Cost: $100</p>
+                        <p>Starting Point: City Hall</p>
+                    </article>
+                </div>
+                <div class='column'>
+                    <img src="images/trail0.jpg">
+                </div>
+            </div>
+            <div class='row'>
+                <div class='column'>
+                    <article>
+                        <h2>Rolling Hills Adventure</h2>
+                        <p>Length: Medium</p>
+                        <p>Skill Required: Intermediate</p>
+                        <p>Cost: $200</p>
+                        <p>Starting Point: Bozeman General</p>
+                    </article>
+                </div>
+                <div class='column'>
+                    <img src="images/trail1.jpg">
+                </div>
+            </div>
+            <div class='row'>
+                <div class='column'>
+                    <article>
+                        <h2>Mountain Adventure</h2>
+                        <p>Length: Long</p>
+                        <p>Skill Required: Advanced</p>
+                        <p>Cost: $300</p>
+                        <p>Starting Point: Belgrade Lodge</p>
+                    </article>
+                </div>
+                <div class='column'>
+                    <img src="images/racing0.jpg">
+                </div>
+            </div>
+            <div class='row'>
+                <div class='column'>
+                    <article>
+                        <h2>Cliff Adventure</h2>
+                        <p>Length: Short</p>
+                        <p>Skill Required: Professional</p>
+                        <p>Cost: $350</p>
+                        <p>Starting Point: Tall Point</p>
+                    </article>
+                </div>
+                <div class='column'>
+                    <img src='images/trail0.jpg'>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+    <footer>
+        <section class="contact">
+            <h3>The Mountain Spoke</h3>
+            (123)456-7890 3950 Valley Commons Drive Bozeman, MT 99999
+            <a href='contact.html'>Map</a>
+        </section>
+        <section class="footer-bar">&copy;2018 | All Rights Reserved | James Kennedy |&nbsp;<span id="currentdate"></span>
+        </section>
+    </footer>
+    <script src='scripts/currentdate.js'></script>
+    <script src='scripts/toggleMenu.js'></script>
+</body>
+</html>

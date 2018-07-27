@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The Mountain Speaks Main Page">
+    <link rel='stylesheet' href='styles/normalize.css'>
+    <link rel='stylesheet' href='styles/main.css'>
+    <link rel='stylesheet' href='styles/medium.css'>
+    <link rel='stylesheet' href='styles/large.css'>
+    <link rel='stylesheet' href='styles/eve.css'>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2|Montserrat:400,700" rel="stylesheet">
+    <title>The Mountain Spoke</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class='logo'>
+            <img src='images/bike.png' alt='logo' id='logo'>
+        </div>
+        <div class='title'>
+            <h1>The Mountain Spoke</h1>
+            <p class='subheading'>Mountain Biking and Montana</p>
+        </div>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+        <!-- BUTTON FOR SMALL VIEW -->
+        <button onclick='toggleMenu()'>&#9776;</button>
+        <ul id='navBar' class='hide'>
+            <li><a href="index.html">Home</a></li>
+            <li><a href='adventure.html'>Adventure Tours</a></li>
+            <li><a href='events.html'>Events</a></li>
+            <li><a href='sales.html'>Sales</a></li>
+            <li><a href='services.html'>Services</a></li>
+            <li><a href='contact.html'>Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+        <section id='cycletheD'>
+            <h2 id='sectionhead'>Cycle the Continental Divide!</h2>
+            <div id='info' class='row'>
+                <div class='col1' id='bigarticle'>
+                    <h2>Join us for the Annual Event</h2>
+                    <p>Each year, participants come together to Cycle the Continental Divide! This is a great event because while it is challenging, it is not particularly dangerous. In fact, it is quite rare that someone will die on the trail. This makes it a great entry point for beginners who want to step to the next level. Its length makes it great for a test of endurance. In fact, this same track is used for the local Triathalon. </p>
+                    <ul>
+                        <h3>Requirements:</h3>
+                        <li>Participants must bring own equipment or rent, no freebies here</li>
+                        <li>Participants must sign insurance liability waiver</li>
+                        <li>Participants must be at least 16 years of age or have a parent with them</li>
+                        <li>Cost: $25</li>
+                        <h3>Proceeds will benefit the Local Wildlife Foundation</h3>
+                    </ul>
+                </div>
+                <div class='col1'>
+                    <div class='dimage'>
+                        <img src='images/tours.jpg'>
+                    </div>
+                </div>
+            </div>
+            <div id='formrow' class='row'>
+                <div class='col1'>
+                    <div class='dimage'><img src='images/trail1.jpg'></div>
+                </div>
+                <div class='col1'>
+                    <form method='get' action='thanks.html' id='regForm'>
+                        <fieldset>
+                            <legend>Register Now!</legend>
+                            <label class='top'>Name* <input type="text" name='name' required></label>
+                            <label class='top'>Email <input type="email" name='email' placeholder="joeschmo@emailservice.com"></label><br/>
+                            <label class='sbs'>Date of Birth*</label><input type="date" name='stormdate' required>
+                            <label class='top'>Phone* <input type='tel' name='phone' required></label><br/>
+                            <label class='top'>Home State or Country* <input type="text" name='zip' required></label>
+                            <br/>
+                            <input type='submit' value='Register Now' class='submitBtn'>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+    <footer>
+        <section class="contact">
+            <h3>The Mountain Spoke</h3>
+            (123)456-7890 3950 Valley Commons Drive Bozeman, MT 99999
+            <a href='contact.html'>Map</a>
+        </section>
+        <section class="footer-bar">&copy;2018 | All Rights Reserved | James Kennedy |&nbsp;<span id="currentdate"></span>
+        </section>
+    </footer>
+    <script src='scripts/currentdate.js'></script>
+    <script src='scripts/toggleMenu.js'></script>
+</body>
+</html>
